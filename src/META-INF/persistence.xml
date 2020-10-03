@@ -3,6 +3,9 @@
 	<persistence-unit name="ConsoleCoffeeList" transaction-type="RESOURCE_LOCAL">
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 		<class>model.beansList</class>
+		<class>model.Shopper</class>
+		<class>model.ListDetails</class>
+		<class>controller.LocalDateAttributeConverter</class>
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
 			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://cis175.ce8gd7d17dud.us-east-1.rds.amazonaws.com/coffee"/>

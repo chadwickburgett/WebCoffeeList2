@@ -96,7 +96,7 @@ public class ListBeanHelper {
 	public List<beansList> showAllBeans() {
 		// TODO Auto-generated method stub
 		EntityManager em = emfactory.createEntityManager();
-		List<beansList> allItems = em.createQuery("SELECT i FROM beansList i").getResultList();
-		return allItems;
+		List<beansList> allBeans = em.createQuery("SELECT i FROM beansList i").getResultList();
+		return allBeans;
 	}
 }
