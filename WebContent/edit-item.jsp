@@ -9,9 +9,8 @@
 </head>
 <body>
 <form action = "editItemServlet" method="post">
-Origin: <input type ="text" name = "origin" value=
-"${itemToEdit.origin}">
-Roast: <input type = "text" name = "roast" value= "${itemToEdit.roast}">
+Origin: <input type ="text" name = "origin" value="${itemToEdit.origin}" pattern="[A-Z][A-Za-z]{3,20}" title="Mexico" required>
+Roast: <input type = "text" name = "roast" value= "${itemToEdit.roast}" pattern="[A-Z][A-Za-z ]{3,20}" title="Light Roast" required>
 <input type = "hidden" name = "id" value="${itemToEdit.id}">
 <input type = "submit" value="Save Edited Item">
 </form>

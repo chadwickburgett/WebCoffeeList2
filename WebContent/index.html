@@ -6,8 +6,8 @@
 </head>
 <body>
 <form action = "addBeansServlet" method="post">
-Origin: <input type ="text" name = "origin">
-Roast: <input type = "text" name = "roast">
+Origin: <input type ="text" name = "origin" pattern="[A-Z][A-Za-z]{3,20}" title="Mexico" required>
+Roast: <input type = "text" name = "roast" pattern="[A-Z][A-Za-z ]{3,20}" title="Light Roast" required>
 <input type = "submit" value="Add Bean">
 </form> <br />
 <a href = "viewAllBeansServlet">View the complete beans list:</a>
